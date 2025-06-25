@@ -5,6 +5,8 @@ void main() {
 }
 
 class GradientContainer extends StatelessWidget {
+  // Constructor (Optional)
+  const GradientContainer({super.key});
   @override
   Widget build(ctx) {
     return Container(
