@@ -15,7 +15,12 @@ void main() {
               end: Alignment.bottomRight,
             ),
           ),
-          child: Center(child: Text("My First App")),
+          child: Center(
+            child: Text(
+              "My First App",
+              style: TextStyle(color: Colors.white, fontSize: 35),
+            ),
+          ),
         ),
       ),
     ),
