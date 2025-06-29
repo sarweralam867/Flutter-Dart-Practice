@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_project/style_test.dart';
 
 final startAlignment = Alignment.topLeft;
 const endAlignmnet = Alignment.bottomRight;
@@ -10,7 +9,7 @@ class GradientContainer2 extends StatelessWidget {
 
   const GradientContainer2.purple({super.key})
     : color1 = Colors.deepPurple,
-      color2 = Colors.indigo; 
+      color2 = Colors.indigo;
 
   final Color color1;
   final Color color2;
@@ -26,7 +25,7 @@ class GradientContainer2 extends StatelessWidget {
           end: endAlignmnet,
         ),
       ),
-      child: Image.asset(color: ,),
+      child: Image.asset('assets/images/dice-2.png'),
     );
   }
 }
