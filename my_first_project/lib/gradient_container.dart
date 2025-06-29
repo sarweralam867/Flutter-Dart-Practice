@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_project/style_test.dart';
 
 final startAlignment = Alignment.topLeft;
 const endAlignmnet = Alignment.bottomRight;
@@ -19,12 +20,7 @@ class GradientContainer extends StatelessWidget {
           end: endAlignmnet,
         ),
       ),
-      child: Center(
-        child: Text(
-          "My First App",
-          style: TextStyle(color: Colors.white, fontSize: 35),
-        ),
-      ),
+      child: Center(child: StyleTest()),
     );
   }
 }
