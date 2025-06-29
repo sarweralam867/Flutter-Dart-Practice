@@ -8,6 +8,10 @@ class GradientContainer2 extends StatelessWidget {
   // Constructor (Optional)
   const GradientContainer2(this.color1, this.color2, {super.key});
 
+  const GradientContainer2.purple({super.key})
+    : color1 = Colors.deepPurple,
+      color2 = Colors.indigo; 
+
   final Color color1;
   final Color color2;
 
@@ -22,7 +26,7 @@ class GradientContainer2 extends StatelessWidget {
           end: endAlignmnet,
         ),
       ),
-      child: Center(child: StyleTest("My App")),
+      child: Image.asset(color: ,),
     );
   }
 }
