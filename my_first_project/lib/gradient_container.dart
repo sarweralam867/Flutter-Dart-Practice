@@ -20,7 +20,7 @@ class GradientContainer extends StatelessWidget {
           end: endAlignmnet,
         ),
       ),
-      child: Center(child: StyleTest()),
+      child: Center(child: StyleTest("My App")),
     );
   }
 }
