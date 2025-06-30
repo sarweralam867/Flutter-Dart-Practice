@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class GenderButton extends StatefulWidget {
-  const GenderButton(this.label, this.icon, this.isSelected, {super.key});
+  GenderButton(
+    this.label,
+    this.icon,
+    this.isSelected,
+    this.gender, {
+    super.key,
+  });
 
   final String label;
   final IconData icon;
   final bool isSelected;
+  String gender;
   @override
   State<GenderButton> createState() => _GenderButtonState();
 }
@@ -14,7 +22,11 @@ class _GenderButtonState extends State<GenderButton> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        setState(() {
+          widget.gender = widget.label;
+        });
+      },
       child: AnimatedContainer(
         duration: const Duration(microseconds: 200),
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 30),

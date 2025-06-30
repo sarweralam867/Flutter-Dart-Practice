@@ -8,6 +8,10 @@ class BmiHome extends StatefulWidget {
   State<BmiHome> createState() => _BmiHomeState();
 }
 
+double? bmi;
+String? category;
+String gender = "";
+
 class _BmiHomeState extends State<BmiHome> {
   @override
   Widget build(BuildContext context) {
@@ -46,9 +50,14 @@ class _BmiHomeState extends State<BmiHome> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                GenderButton("Male", Icons.male, false),
+                GenderButton("Male", Icons.male, gender == 'Male', gender),
                 SizedBox(width: 35),
-                GenderButton("Female", Icons.female, false),
+                GenderButton(
+                  "Female",
+                  Icons.female,
+                  gender == "Female",
+                  gender,
+                ),
               ],
             ),
           ],
